@@ -9,7 +9,8 @@ public class insertionSortPartTwo {
              int next = ar[i];
              // find the insertion location while moving all larger element up
              int j = i;
-             while (j > 0 && ar[j - 1] > next) {
+             //Correctness and the Loop Invariant
+             while (j >= 0 && ar[j - 1] > next) {
                  ar[j] = ar[j - 1];
                  j--;
              }
